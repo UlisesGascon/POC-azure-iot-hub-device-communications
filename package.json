@@ -4,6 +4,8 @@
   "description": "Azure IOT Hub - A Comprehensive Proof of Concept Walkthrough in Node.js!",
   "private": true,
   "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "device:start": "node iot-device/index.js",
     "communicator:start": "node communicator/index.js"
   },
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications/issues"
   },
-  "homepage": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications#readme"
+  "homepage": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications#readme",
+  "devDependencies": {
+    "standard": "17.0.0"
+  }
 }
