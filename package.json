@@ -19,6 +19,14 @@
     "url": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications/issues"
   },
   "homepage": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications#readme",
+  "dependencies": {
+    "azure-iot-device": "1.18.1",
+    "azure-iot-device-mqtt": "1.16.1",
+    "dotenv": "16.0.3",
+    "pino": "8.8.0",
+    "pino-pretty": "9.1.1",
+    "pm2": "5.2.2"
+  },
   "devDependencies": {
     "standard": "17.0.0"
   }
