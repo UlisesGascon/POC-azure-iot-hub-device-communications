@@ -9,6 +9,10 @@ This project is a proof of concept that will demonstrate the potential of Azure 
 In order to understand the POC, you will need some basic knowledge about the Azure IOT Hub universe (Digital Twins, telemetry, Node.js SDK...) and the PM2 library, as it is used to control the lifecycle of the device.
 
 
+### :tv: Tutorial 
+
+[10m video in Youtube about this project](https://youtu.be/5zOcsPXkQXw)
+
 ### :tada: Features 
 
 - A simple IoT device with sensor data simulated and its life cycle controlled by PM2 or independently.
@@ -47,6 +51,17 @@ IOTHUB_DEVICE_CONNECTION_STRING={YOUR SECRET}
 
 #### Local development
 
+Download the source code
+```bash
+git clone https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications
+cd POC-azure-iot-hub-device-communications
+```
+
+Install pm2 in your machine
+```bash
+npm i -g pm2@5.2.2
+```
+
 Install the project dependencies 
 ```bash
 nvm use
@@ -68,6 +83,11 @@ Clean the project:
 
 ```bash
 npm run machine:clean
+```
+
+Uninstall global dependencies:
+```bash
+npm uninstall -g pm2@5.2.2
 ```
 
 ### :satellite: Usage
