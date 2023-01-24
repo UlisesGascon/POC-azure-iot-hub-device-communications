@@ -7,7 +7,11 @@
     "lint": "standard",
     "lint:fix": "standard --fix",
     "device:start": "node iot-device/index.js",
-    "communicator:start": "node communicator/index.js"
+    "communicator:start": "node communicator/index.js",
+    "machine:start": "pm2 start machine.config.js",
+    "machine:stop": "pm2 stop machine.config.js",
+    "machine:restart": "pm2 restart machine.config.js",
+    "machine:clean": "pm2 delete machine.config.js"
   },
   "repository": {
     "type": "git",
