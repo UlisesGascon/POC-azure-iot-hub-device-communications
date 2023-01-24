@@ -47,6 +47,17 @@ IOTHUB_DEVICE_CONNECTION_STRING={YOUR SECRET}
 
 #### Local development
 
+Download the source code
+```bash
+git clone https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications
+cd POC-azure-iot-hub-device-communications
+```
+
+Install pm2 in your machine
+```bash
+npm i -g pm2@5.2.2
+```
+
 Install the project dependencies 
 ```bash
 nvm use
@@ -68,6 +79,11 @@ Clean the project:
 
 ```bash
 npm run machine:clean
+```
+
+Uninstall global dependencies:
+```bash
+npm uninstall -g pm2@5.2.2
 ```
 
 ### :satellite: Usage
