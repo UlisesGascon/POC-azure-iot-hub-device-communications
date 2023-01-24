@@ -9,6 +9,10 @@ This project is a proof of concept that will demonstrate the potential of Azure 
 In order to understand the POC, you will need some basic knowledge about the Azure IOT Hub universe (Digital Twins, telemetry, Node.js SDK...) and the PM2 library, as it is used to control the lifecycle of the device.
 
 
+### :tv: Tutorial 
+
+[10m video in Youtube about this project](https://youtu.be/5zOcsPXkQXw)
+
 ### :tada: Features 
 
 - A simple IoT device with sensor data simulated and its life cycle controlled by PM2 or independently.
