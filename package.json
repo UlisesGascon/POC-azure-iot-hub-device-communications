@@ -1,0 +1,37 @@
+{
+  "name": "poc-azure-iot-hub-device-communications",
+  "version": "1.0.0",
+  "description": "Azure IOT Hub - A Comprehensive Proof of Concept Walkthrough in Node.js!",
+  "private": true,
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "device:start": "node iot-device/index.js",
+    "communicator:start": "node communicator/index.js",
+    "machine:start": "pm2 start machine.config.js",
+    "machine:stop": "pm2 stop machine.config.js",
+    "machine:restart": "pm2 restart machine.config.js",
+    "machine:clean": "pm2 delete machine.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications.git"
+  },
+  "author": "Ulises Gascon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications/issues"
+  },
+  "homepage": "https://github.com/UlisesGascon/POC-azure-iot-hub-device-communications#readme",
+  "dependencies": {
+    "azure-iot-device": "1.18.1",
+    "azure-iot-device-mqtt": "1.16.1",
+    "dotenv": "16.0.3",
+    "pino": "8.8.0",
+    "pino-pretty": "9.1.1",
+    "pm2": "5.2.2"
+  },
+  "devDependencies": {
+    "standard": "17.0.0"
+  }
+}
